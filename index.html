@@ -16,7 +16,7 @@
         </div>
         <div class="window">
             <div class="operation"> 
-                <input type="number" class="operation numberOp"></div>
+                <input pattern="[0-9][x][+][-][/][*]" type="text" id="numberOp" class="operation numberOp"></div>
             <div class="result" id="result">
                 <!-- <label  class="operation result"></div> -->
             </div>
@@ -24,36 +24,38 @@
 
         <div class="numbers">
             <div>
-                <button class="number"  name="seven">7</button>
-                <button class="number"  name="eight">8</button>
-                <button class="number"  name="nine">9</button>
-                <button class="number"  name="del">DEL</button>
-                <button class="number"  name="ac">AC</button>
+                <button class="number" value="7" name="seven">7</button>
+                <button class="number" value="8" name="eight">8</button>
+                <button class="number" value="9" name="nine">9</button>
+                <button class="number action" value="DEL" name="del" id="delete">DEL</button>
+                <button class="number action" value="AC" name="ac" id="restar">AC</button>
                 
             </div>
             <div>
-                <button class="number"  name="four">4</button>
-                <button class="number"  name="five">5</button>
-                <button class="number"  name="six">6</button>
-                <button class="number"  name="mult">x</button>
-                <button class="number"  name="div">÷</button>
+                <button class="number" value="4" name="four">4</button>
+                <button class="number" value="5" name="five">5</button>
+                <button class="number" value="6" name="six">6</button>
+                <button class="number" value="x" name="mult">x</button>
+                <button class="number" value="/" name="div">÷</button>
             </div>
             <div>
-                <button class="number"  name="one">1</button>
-                <button class="number"  name="two">2</button>
-                <button class="number"  name="three">3</button>
-                <button class="number"  name="sum">+</button>
-                <button class="number"  name="res">-</button>
+                <button class="number" value="1" name="one">1</button>
+                <button class="number" value="2" name="two">2</button>
+                <button class="number" value="3" name="three">3</button>
+                <button class="number" value="+" name="sum">+</button>
+                <button class="number" value="-" name="res">-</button>
             </div>
             <div>
-                <button class="number"  name="zero">0</button>
-                <button class="number"  name="period">.</button>
-                <button class="number"  name="three">Exp</button>
-                <button class="number"  name="ans">Ans</button>
-                <button class="number"  name="result">=</button>
+                <button class="number" value="0" name="zero">0</button>
+                <button class="number" value="." name="period">.</button>
+                <button class="number action" value="exp" name="three">Exp</button>
+                <button class="number action" value="ans" name="ans">Ans</button>
+                <button class="number action" value="=" name="result">=</button>
             </div>
         </div>
         
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
