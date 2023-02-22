@@ -12,12 +12,12 @@ for (const iterator of NUMBER) {
         }
     })
 }
-
+//actualizar calculadora con los valors
 function UpdateCalculator(value){    
     operation.style.fontSize = '15px';
     operation.value +=  value
 }
-
+//eliminar elementos de la calculadora
 document.getElementById("delete").addEventListener('click',()=>{
     let valTemp =operation.value    
     if (valTemp.length > 0){
